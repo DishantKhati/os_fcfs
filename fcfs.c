@@ -17,4 +17,14 @@ int avgtime( int proc[], int n, int bt[]) {
       printf(" %d\t  %d\t\t %d \t%d\n", i+1, bt[i], wt[i], tat[i]);
    }
    printf("Average waiting time = %f\n", (float)tw / (float)n);printf("Average turn around time = %f\n", (float)tt / (float)n);return 0;}
-int main(){int proc[50],n;printf("Enter the number of Processes: ");scanf("%d",&n);printf("Enter the arrival time: ");for(int i=0;i<n;scanf("%d",&proc[i++]));int bt[50];printf("Enter the burst time: ");for(int i=0;i<n;scanf("%d",&bt[i++]));avgtime(proc, n, bt);return 0;}
+int main()
+{int proc[50],n;
+ printf("Enter the number of Processes: ");
+ scanf("%d",&n);
+ printf("Enter the arrival time: ");
+ for(int i=0;i<n;scanf("%d",&proc[i++]));
+ int bt[50];
+ printf("Enter the burst time: ");
+ for(int i=0;i<n;scanf("%d",&bt[i++]));
+ avgtime(proc, n, bt);
+ return 0;}
